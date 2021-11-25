@@ -1,0 +1,38 @@
+<div class="row g-3">
+  <div class="col-auto">
+    <input type="text" class="form-control"  placeholder="buscar" [(ngModel)] = "filtroLista">
+  </div>
+</div>
+
+<h3>Filtro: {{filtroLista}}</h3>
+
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+      <th>#</th>
+      <th>Data Coleta</th>
+      <th>Qtd Cargas</th>
+      <th>Opções</th>
+    </tr>
+  </thead>
+  <tbody *ngIf=" entregasFiltradas && entregasFiltradas.length">
+    <tr *ngFor="let entrega of entregasFiltradas">
+      <td>{{entrega.id}}</td>
+      <td>{{entrega.data_Coleta | date}}</td>
+      <td>{{entrega.cargas.length}}</td>
+      <td>
+        <button class='btn btn-success me-1'>Editar</button>
+        <button class='btn btn-danger'>Excluir</button>
+      </td>
+    </tr>
+  </tbody>
+  <tfoot *ngIf=" !entregas.length">
+    <tr>
+      <td colspan="7" class='text-center'>
+        <h3>
+          Nenhuma entrega encontrada!
+        </h3>
+      </td>
+    </tr>
+  </tfoot>
+</table>

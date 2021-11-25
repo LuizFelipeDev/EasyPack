@@ -1,0 +1,50 @@
+<p>
+  Cargas!!!
+</p>
+
+<div *ngFor="let carga of cargas">
+  Id: {{carga.id}}<br>
+  Peso: {{carga.peso}}<br>
+  Altura: {{carga.altura}}<br>
+  Comprimento: {{carga.comprimento}}<br>
+  Largura: {{carga.largura}}<br>
+  Data_Entrega: {{carga.data_Entrega}}<br>
+  IdEntrega: {{carga.entrega.id}}<br>
+
+  <hr>
+  <hr>
+
+  <table class="table table-striped">
+    <thead class="thead-dark">
+      <tr>
+        <td>Id</td>
+        <td>Peso</td>
+        <td>Altura</td>
+        <td>Comprimento</td>
+        <td>Largura</td>
+        <td>Data Entrega</td>
+        <td>IdEntrega</td>
+      </tr>
+    </thead>
+    <tbody *ngIf="cargas && cargas.length">
+      <tr *ngFor="let carga of cargas">
+        <td>{{carga.id}}</td>
+        <td>{{carga.peso}}</td>
+        <td>{{carga.altura}}</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="7" class='text-center'>
+          <h3>
+            Nenhuma carga encontrada!
+          </h3>
+        </td>
+      </tr>
+    </tfoot>
+  </table>
+</div>
