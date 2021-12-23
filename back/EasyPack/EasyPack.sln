@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyPack.API", "EasyPack.API\EasyPack.API.csproj", "{253830B7-A69F-4B3D-A66B-F48F57DAA02F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{253830B7-A69F-4B3D-A66B-F48F57DAA02F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{253830B7-A69F-4B3D-A66B-F48F57DAA02F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{253830B7-A69F-4B3D-A66B-F48F57DAA02F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{253830B7-A69F-4B3D-A66B-F48F57DAA02F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {435F84F3-C878-4065-9D7F-4E9231A05D46}
+	EndGlobalSection
+EndGlobal
